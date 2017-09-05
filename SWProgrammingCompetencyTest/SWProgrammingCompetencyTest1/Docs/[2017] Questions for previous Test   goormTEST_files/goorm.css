@@ -1,0 +1,236 @@
+.goorm-answer-wrapper {
+	width: 100%;
+	margin-bottom: 20px;
+	height: 31px;
+	margin-top: 25px;
+}
+
+.goorm-answer-input {
+	float: right;
+	width: 250px;
+}
+
+.submit_time {
+	float: right;
+    margin: 10px;
+}
+
+.terminal_style {
+	background-color: #444;
+	font-family: 'Source Code Pro', 'Courier New', 'Lucida Console', 'Nanum Gothic Coding';
+	color: white;
+	padding: 8px !important;
+}
+
+.terminal_line {
+	padding: 5px 0 5px 15px;
+	color: #fff;
+}
+
+.terminal_table {
+	margin-left: auto;
+	margin-right: auto;
+	color: black;
+}
+
+.terminal_table .pass {
+	color: #0BC550
+}
+
+.terminal_table .fail {
+	color: #ff3183
+}
+
+.terminal_table .error {
+	color: #888
+}
+
+.goorm-quiz-boxarea {
+	margin: 5px;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+
+.choices_container {
+	margin-top: 15px;
+}
+
+.pairing_choice_item {
+	background-color: rgb(214, 231, 205);
+	border-radius: 8px;
+	font-size: 14px;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.pairing_choice_item:hover {
+	cursor: grabbing;
+	cursor: -moz-grabbing;
+	cursor: -webkit-grabbing;
+}
+
+.goorm-robocode-table {
+	text-align: center;
+	width: 600px;
+	border: 2px solid #00bfff;
+	margin: 10px;
+}
+
+.goorm-robocode-table tr, .goorm-robocode-table td {
+	padding: 5px;
+}
+
+.goorm-robocode-table tr:first-child td {
+	background-color: #87cefa;
+}
+
+.editor_contents .goorm-quiz-tab goorm-quiz ol {
+	margin: 15px 0px;
+}
+
+a.disabled:hover {
+	text-decoration: none !important;
+	cursor: not-allowed;
+}
+
+.goorm-runner {
+	width: 100%;
+	margin: 0 0 8.5px;
+}
+
+.goorm-runner pre {
+	margin: 0px;
+}
+
+.goorm-runner .code-runner {
+	float: right;
+}
+
+.goorm-runner .goorm-runner-terminal {
+	outline: none;
+}
+
+.goorm-runner .goorm-runner-terminal .terminal {
+	padding: 8px;
+	width: 100% !important;
+	color: #002b36 !important;
+    background-color: #fdf6e3 !important;
+    border: 1px solid #ddd;
+}
+
+.goorm-runner .goorm-runner-terminal .terminal .reverse-video {
+    background: #657b83;
+    color: #000;
+}
+
+.CodeMirror {
+	height: 100%;
+	font-size: 14px;
+	line-height: 1.3;
+}
+
+.CodeMirror-vscrollbar:not(.light_theme)::-webkit-scrollbar,
+.goorm-stdout-container::-webkit-scrollbar{
+	width: 12px;
+	height: 12px;
+	border: 3px solid #090909;
+}
+.CodeMirror-vscrollbar:not(.light_theme)::-webkit-scrollbar-button:start:decrement,
+.CodeMirror-vscrollbar:not(.light_theme)::-webkit-scrollbar-button:end:increment,
+.goorm-stdout-container::-webkit-scrollbar-button:start:decrement,
+.goorm-stdout-container::-webkit-scrollbar-button:end:increment{
+	display: block;
+	height: 5px;
+	background: #090909;
+}
+.CodeMirror-vscrollbar:not(.light_theme)::-webkit-scrollbar-track,
+.goorm-stdout-container::-webkit-scrollbar-track {
+	background: #090909;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+.CodeMirror-vscrollbar:not(.light_theme)::-webkit-scrollbar-thumb,
+.goorm-stdout-container::-webkit-scrollbar-thumb {
+	height: 40px;
+	width: 40px;
+	background: #333;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	border-right: 2px solid #090909;
+	border-left: 2px solid #090909;
+}
+.CodeMirror-vscrollbar:not(.light_theme)::-webkit-scrollbar-thumb:hover,
+.goorm-stdout-container::-webkit-scrollbar-thumb:hover {
+	height: 40px;
+	width: 40px;
+	background: #555;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+}
+
+/** scratchduino **/
+#content_area {
+	height: 500px;
+}
+.blocklyWorkspace {
+	cursor: url("/media/handopen.cur") 8 5, auto;
+}
+.blocklyWorkspace:active {
+	cursor: url("/media/handclosed.cur") 8 5, auto;
+}
+
+.blocklyToolboxDiv .blocklyTreeRoot:nth-child(1) > div,
+.blocklyToolboxDiv .blocklyTreeRoot:nth-child(1) span {
+	cursor: pointer;
+}
+
+.blocklyTreeRow:hover {
+	background-color: #008bf4 !important;
+}
+.blocklyTreeRow.blocklyTreeSelected {
+	background-color: #008bf4 !important;
+}
+.blocklyToolboxDiv {
+	background-color: #333 !important;
+	border-radius: 10px;
+}
+
+.blocklyTreeLabel {
+	color: white !important;
+}
+.blocklyFlyoutBackground {
+	fill: #1e1e1e !important;
+	fill-opacity: 0.8 !important;
+}
+
+#content_area {
+	width: 100%;
+	height: 100%;
+}
+
+.blocklyTreeSeparator {
+	border-bottom-color: #4b4b4b !important;
+}
+
+#no_scratchduino {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-size: 22px;
+	color: #FFF;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	z-index: 100;
+}
+
+#no_flash {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-size: 22px;
+	color: #FFF;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	z-index: 100;
+}
