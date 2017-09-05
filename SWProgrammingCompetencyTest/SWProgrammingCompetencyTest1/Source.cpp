@@ -21,8 +21,20 @@ public:
         // ToDo : Complete Pop() function
         // Pop function returns data
         // If the stack is empty, return -1
-
+        if (sp != 0)
+        {
+            return data[--sp];
+        }
         return -1;
+    }
+
+    int Sum(){
+        int sum = 0;
+        for (int i = 0; i < sp; i++)
+        {
+            sum += data[i];
+        }
+        return sum;
     }
 };
 
@@ -44,6 +56,7 @@ public:
     int Multiply(int a, int b){
         return (a*b) % MOD;
     }
+
     int Solve(void){
         int i, d;
         int sol = 0;
@@ -63,9 +76,9 @@ public:
         }
 
         // Todo
+        sol = S.Sum();
 
-
-        return sol;
+        return (sol % MOD);
     }
 };
 
