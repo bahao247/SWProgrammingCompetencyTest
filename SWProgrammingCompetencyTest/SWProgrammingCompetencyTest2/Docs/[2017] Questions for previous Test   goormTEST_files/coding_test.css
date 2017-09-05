@@ -1,0 +1,293 @@
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+body section {
+	flex: 1 auto;
+}
+.recruitment_sub_title {
+	display: inline-block;
+	width: 100px;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.recruitment_info {
+	margin: 0 0 2px 0;
+	color: black;
+	clear: both;
+}
+
+li > .recruitment_info:last-child {
+	margin-bottom: 10px;
+}
+
+.recruitment_info_title {
+	/*margin-bottom: 45px !important; */
+	margin-bottom: 40px !important;
+}
+
+.recruitment_info_title .title,
+.recruitment_info_title a {
+	font-size:18px;
+	float: left;
+}
+
+.recruitment_info_little {
+	margin: 0px 0px 2px 0px;
+	color: black;
+}
+
+.recruitment_info_little.last {
+	float: left;
+}
+
+.recruitment_info_title_little {
+	margin-bottom: 30px;
+}
+
+.recruitment_info_title_little > span{
+	float: left;
+}
+
+.recruitment_info_title_little .title,
+.recruitment_info_title_little a {
+	font-size:18px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+}
+
+.recruitment_sub_title_little {
+	display: inline-block;
+	width: 100px;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.recruitment_apply_button {
+    position: absolute;
+    right: 2px;
+    width: 80px;
+    text-align: center;
+    bottom: 0;
+}
+
+.dateview .input-group {
+	position: inherit;
+}
+
+.dateview .input-group-addon {
+	border: 0;
+	padding: 0 10px;
+	background: #fff;
+}
+
+#contents_lesson_open_set {
+	margin-top: 18px;
+	margin-bottom: -10px;
+}
+
+.lesson_subject_container {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ddd;
+}
+
+.tutorial_quiz_data_container {
+	position: relative;
+}
+
+.quiz_mgmt_button_container {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin-top: -10px;
+}
+
+#curriculum_new_quiz {
+    padding: 5px 10px;
+}
+
+#goorm-header {
+	background-color: #fff !important;
+	border-bottom: 1px solid #ddd;
+}
+
+.btn-primary {
+	background-color: #00456c !important;
+	border-color: #00456c !important;
+}
+
+.btn-primary:hover {
+	background-color: #30678e !important;
+	border-color: #30678e !important;
+}
+
+.lecture_type > li.on > span {
+	background: #00456c !important;
+}
+
+dd {
+	margin-left: 65px !important;
+}
+
+dt {
+	width: 65px !important;
+}
+
+#login {
+	background-color: #fff;
+}
+#login + footer {
+	margin-top: 0;
+}
+
+body.learn header {
+	background-color: #00456c !important;
+	border-bottom: #0a3852 1px solid !important;
+}
+
+body.learn header h1 {
+	background-color: #002438 !important;
+}
+
+body.body-mylecture .lecture_info {
+	padding-left: 0px !important;
+}
+
+body.body-mylecture .lecture_info > a.thumb {
+	position: inherit !important;
+}
+
+body.body-mylecture .lecture_info > a.thumb > img {
+	width: 100% !important;
+	height: inherit !important;
+}
+
+#lecture-desc {
+	margin-top: 25px;
+	background-color: #fff;
+	padding: 25px;
+}
+
+.sns_share {
+	margin-top: 25px;
+	text-align: right;
+}
+
+.sns_share a {
+	border-radius: 0px;
+	width:40px;
+}
+
+.sns_share .facebook {
+	background-color: #3b5998 !important;
+}
+
+.sns_share .twitter {
+	background-color: #00aced !important;
+	border-color: #018cc1 !important;
+}
+
+#lecture_editor {
+	margin-top: 40px;
+	padding: 10px;
+	max-height: 300px;
+	overflow: hidden;
+}
+
+.apply_state_label {
+	font-size: 11px !important;
+	float: right;
+	padding: 3px 5px;
+}
+
+.apply_my_buttons label {
+	font-size: 11px;
+	padding: 5px 7px;
+}
+
+#my_lecture_list {
+	margin-top: 5px;
+}
+
+.lecture_list_teacherhome > li {
+	padding: 10px 0px 15px 120px;
+}
+
+.lecture_list_teacherhome .recruitment_info_title,
+.lecture_list_teacherhome .recruitment_info {
+	margin-right: 80px;
+}
+
+.lecture_list_teacherhome .recruitment_sub_title {
+	width: 140px;
+}
+
+.my_recent_lecture {
+	padding: 0px;
+}
+
+.display-none {
+	display: none !important;
+}
+
+#login .content_box {
+	border: none;
+}
+
+.top_menu a {
+	color: black
+}
+
+.header_tool a {
+	color: black
+}
+
+
+
+
+
+.lecture_lnb_menu > li.active > a,
+.lecture_test_list > ul > li > p.right > a:hover {
+	background: #00456c;
+}
+
+#goorm-header .navbar-nav li > a:hover {
+	color: #00456c;
+}
+
+#agreement .agreement_content {
+	width: 60%;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+#agreement .agree_button {
+	padding-top: 100px;
+	text-align: center;
+}
+#agreement .agree_button button {
+	width: 100px;
+	margin: 0 5px;
+}
+#agreement .agree_button button.not_agree {
+	color: #fff;
+}
+
+/***************************************************************** 
+  모바일 m mobile
+*****************************************************************/
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	/***************************************************************** 
+	  browse
+	*****************************************************************/
+	.recruitment_info_title {margin-bottom: 30px !important;}
+	#my_list {padding: 20px 10px;}
+	.apply_my_buttons {float: none !important;margin-top: 15px;}
+	.lecture_list_vertical2 > li > a.thumbnail > img.thumb {width: 70px; height: 70px;}
+	.lecture_list_vertical2 > li > a.thumbnail {height: 72px; padding: 0px 0px 0px 80px;}
+}
