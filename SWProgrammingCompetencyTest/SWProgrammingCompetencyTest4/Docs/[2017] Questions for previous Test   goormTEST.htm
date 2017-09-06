@@ -1,0 +1,894 @@
+<!DOCTYPE HTML>
+<html lang="ko" xml:lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>[2017] Questions for previous Test :: goormTEST</title>
+	<link rel="stylesheet" href="/libs/bootstrap/css/bootstrap-edu.css">
+	<link rel="stylesheet" type="text/css" href="/libs/codemirror/lib/codemirror.css" />
+	<link rel="stylesheet" type="text/css" href="/libs/codemirror/addon/lint/lint.css" />
+	<link rel="stylesheet" type="text/css" href="/libs/codemirror/addon/hint/show-hint.css" />
+	<link rel="stylesheet" type="text/css" href="/libs/codemirror/addon/dialog/dialog.css">
+	<link rel="stylesheet" href="/libs/Toastr/toastr.min.css">
+	<link rel="stylesheet" href="/libs/bootstrap-treeview/bootstrap-treeview.min.css">
+	<link rel="stylesheet" href="/libs/xterm/xterm.css">
+	<link rel="stylesheet" href="/libs/bootstrap-tour/bootstrap-tour.min.css">	
+
+	<link rel="stylesheet" href="/css/goormedu.css">
+	<link rel="stylesheet" href="/css/coding_test.css">
+	<link rel="stylesheet" type="text/css" href="/css/goorm.editor.css" />
+	<link rel="stylesheet" type="text/css" href="/css/tutorial.css" />
+	<link rel="stylesheet" type="text/css" href="/css/widgets/goorm-arrow.css" />
+	<link rel="stylesheet" type="text/css" href="/libs/codemirror/addon/display/fullscreen.css"/>
+		
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?1">
+</head>
+<body class="learn" data-lang="us">
+	<header>
+		
+	<style>.btn.btn-primary {background-color: #a51c37 !important; border-color: #a51c37 !important;}#goorm-header .navbar-nav li > a:hover {color: #a51c37 !important;}.lecture_lnb_menu > li.active > a, .lecture_test_list > ul > li > p.right > a:hover {background-color: #a51c37 !important; border-color: #a51c37 !important;}.btn-primary:hover {background-color: #a50823 !important; border-color: #a50823 !important;}.lecture-guide .learnpage_curriculum_list_btn:hover, .lecture-guide .learnpage_curriculum_list_btn:focus, .lecture-guide .learnpage_curriculum_list_btn.list_open {color:#a50823}.btn-primary:active {background-color: #b93037 !important; border-color: #b93037 !important;}.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {background-color: #a51c37 !important; border-color:#a51c37 !important;}.running_content_header a.btn:hover, .running_content_header .coding_tools a.btn:hover {background-color: #a51c37}.running_content_header a.btn, .running_content_header > .open > a.btn, running_content_header > .open > a.btn:hover, .running_result_header > ul > li.active > a, #lang_select_menu > a.btn,  #lang_select_menu > a.btn:hover {border-color:#a51c37 !important}.running_content_header ul li.active a , .running_content_header ul li a:hover, .running_result_header > ul > li > a:hover {background-color: #a51c37}.contact_wrap {background-color: #a51c37!important;}.lecture-guide .learnpage_curriculum_list > .treeview > .list-group > .list-group-item.node-checked {background-color:#a50823}a, .list_header span.count {color: #a50823}.lecture_test_list > ul > li > p.right > span.count > strong { color: #a51c37}body.learn header {background-color: #2f3139 !important; border-bottom: none !important;}</style>
+
+
+<h1>
+	<a href="/">
+		<img src="/images/logo-g.x1.png" min-width="64" height="64"
+			srcset="/images/logo-g.x2.png 3x, /images/logo-g.x2.png 2x, /images/logo-g.x2.png 1x"
+			alt="구름에듀">
+	</a>
+</h1>
+<a href=".." class="header_title_link">
+	<h2 class="exam_title">[SW Programming Competency Test] Pre-test</h2>
+	<h3 class="exam_title">[2017] Questions for previous Test</h3>
+</a>
+<div class="header_tool pull-right">
+  <ul class="list-inline" style="display:inline-block;">
+ 		<li class="test_title_wrap header_stat">
+			<!-- <div class="test_title btn btn-danger">
+				<span style="color: #fff">[2017] Questions for previous Test</span>
+			</div> -->
+			<div class="test_time" id="exam_countdown_clock" style="color: #fff">
+				<button type="button" class="exist_limit test_time_button btn" style="display: none;" data-toggle="popover" data-html="true" data-placement="bottom" title="Exam Information" data-content="">
+ 					<div class="header_stat_head">
+ 						Time remaining
+ 					</div>
+ 					<i class="fa fa-clock-o"></i>
+ 					<div class="clock code_font" style="display: inline-block;"></div>
+				</button>
+				<button type="button" class="no_limit test_time_button btn" style="display: none; height: 49px;" data-toggle="popover" data-html="true" data-placement="bottom" title="Exam Information" data-content="">
+					<i class="fa fa-info-circle"></i>
+					No Time Limit
+				</button>
+				<button type="button" class="ended_exam test_time_button btn" style="display: none; height: 49px;" data-toggle="popover" data-html="true" data-placement="bottom" title="Exam Information" data-content="">
+					<i class="fa fa-info-circle"></i>
+					Already ended exam.
+				</button>
+			</div>
+			
+			<div id="q_submit_stat">
+ 			  <button type="button" class="btn">
+ 				<div class="header_stat_head">
+ 					Submit Status
+ 				</div>
+ 				<div class="header_stat_body code_font">
+ 					<i class="fa fa-minus-circle">
+ 					</i>
+ 					<span class="q_submit_count">0</span>/<span class="q_total_count">10</span> Quiz
+ 				</div>
+ 			  </button>
+ 		    </div>
+			
+		</li>
+		<li class="header_print">
+	      
+			  <a data-toggle="modal" data-target="#dlg_setting" title="Screen Setting">
+				  <span class="sr-only">Screen Setting</span>
+				  <i class="fa fa-cog" aria-hidden="true" style="color:#fff;"></i>
+			  </a>
+	      
+		</li>
+	  
+	  <li class="dropdown">
+		<a class="dropdown-toggle" id="dropdownMenu_user" data-toggle="dropdown">
+		  <!-- <img src="/user/profile?id=anonymous_r57bublzb" onerror="this.src='/images/user_photo_default.png'" alt="" class="user_photo img-circle" title=""> -->
+		  <span class="user_name"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+		</a>
+		<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu_user">
+		  <!-- <li><a href="/apply/my">Lectures</a></li>
+		  <li class="divider"></li> -->
+		  <li class="logout"><a href="/logout">Logout</a></li>
+		</ul>
+	  </li>
+  </ul>	 
+	  
+
+</div>
+    </header>
+
+	<section>
+		<div class="full_row">
+			<div class="col-md-4 lecture-guide">
+				<div class="btn-group btn-group-justified guide_header">
+					<a href="#" class="btn btn-default learnpage_curriculum_list_btn">
+						<i class="fa fa-list-ul" aria-hidden="true"></i>&nbsp;&nbsp;Quiz List
+					</a>
+					<a href="/apply/test/bGVjX1BlcENDXzE0OTA2ODQzODE0MDM=" class="btn btn-default my_lecture_btn">
+						<i class="fa fa-undo" aria-hidden="true"></i>&nbsp;&nbsp;Go Back
+					</a>
+		  	    	<a href="#" class="btn btn-default disabled nav_prev">
+						<i class="fa fa-angle-left" aria-hidden="true"></i>&nbsp;&nbsp;Previous Quiz
+					</a>
+					<a href="#" class="btn btn-default disabled nav_next">
+						Next Quiz&nbsp;&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>
+					</a>
+				</div>
+	  	    
+				<div class="learnpage_curriculum_list" style="display: none;">
+					<h4>
+						[SW Programming Competency Test] Pre-test
+						<a class="learnpage_curriculum_list_close">
+							<i class="fa fa-times" aria-hidden="true"></i>
+							<span class="sr-only">Close Curriculum</span>
+						</a>	
+					</h4>
+					<div id="curriculumtree" class="treeview"></div>
+				</div>
+	  	    
+				<div class="instruction_content exam">
+					<h4>
+						[2017/1st]Development of Self-driving Algorithm
+						
+							<span class="label label-success" id="label_submitted" style="display:none;">Submit completed</span>
+						
+					</h4>
+					<div class="sections pdf_contents" style="display:none;">
+						<iframe id='quiz_pdf' src='' width='100%' height='100%' frameborder=0 marginwidth=0 marginheight=0 scrolling=no url='' style="min-height: 835px"></iframe>
+					</div>
+					
+					<div class="quiz_details"> 
+						<span class="info info_difficulty" data-toggle="tooltip" data-placement="left" title="Difficulty"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span><span class="info info_timelimit" data-toggle="tooltip" data-placement="left" title="Program run time limit"><i class="fa fa-clock-o" aria-hidden="true"></i> 2Second</span><span class="info info_score" data-toggle="tooltip" data-placement="left" title="Score assigned to quiz">30points</span>
+					</div>
+					
+					<div class="print_target">
+						<p></p><p style="box-sizing: border-box; margin: 0pt 0px; color: rgb(0, 0, 0); font-family: &quot;Noto Sans KR&quot;, &quot;Apple SD Gothic NEO&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; vertical-align: baseline; unicode-bidi: embed; direction: ltr;"></p><p></p><blockquote style="box-sizing: border-box; padding: 10px 20px; margin: 0px 0px 20px; font-size: 15px; border-left: 5px solid rgb(238, 238, 238); color: rgb(0, 0, 0); font-family: &quot;Noto Sans KR&quot;, &quot;Apple SD Gothic NEO&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; line-height: 1.42857;"><h2 style="font-family: &quot;Noto Sans KR&quot;, &quot;Apple SD Gothic NEO&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; color: rgb(0, 0, 0);"><b style="background-color: rgb(255, 255, 0);"><span style="font-size: 18px;">*Solution (click):&nbsp;</span><a href="http://library.lge.com/solution/2017_1/English/Q4/Q4_solution.cpp" target="_blank"><span style="font-size: 18px;">C++</span></a><span style="font-size: 18px;">,&nbsp;</span><a href="http://library.lge.com/solution/2017_1/English/Q4/Q4_solution.c" target="_blank"><span style="font-size: 18px;">C</span></a><span style="font-size: 18px;">,</span><span lang="EN-US" style="font-family: &quot;맑은 고딕&quot;; font-size: 18px;">&nbsp;</span><a href="http://library.lge.com/solution/2017_1/English/Q4/Q4_solution.java" target="_blank"><span style="font-size: 18px;">Java</span></a></b></h2><p>Standard Library reference :&nbsp;<a href="http://www.cplusplus.com/reference/" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(165, 8, 35); text-decoration: none;">C++</a>,&nbsp;<a href="http://www.cplusplus.com/reference/clibrary/" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(165, 8, 35); text-decoration: none;">C</a><span lang="EN-US" style="box-sizing: border-box; font-size: 10pt; font-family: &quot;맑은 고딕&quot;; color: rgb(31, 73, 125);">,&nbsp;</span><a href="http://docs.oracle.com/javase/8/docs/api/" target="_blank" style="box-sizing: border-box; background-color: transparent; color: rgb(165, 8, 35); text-decoration: none;">Java</a></p></blockquote><p><span style="font-size: 16px;"><br></span></p><p>VC Company's Self-driving Development Team is developing the new algorithm for self-driving.</p><p>This algorithm finds the shortest route from an origin to a destination while avoiding the parks displayed in the map.</p><p>In other words, it must find the shortest route to the destination only through the streets avoiding parks.</p><div><br></div><p><br></p><h3 style="color: rgb(0, 0, 0); line-height: normal; font-family: &quot;Noto Sans KR&quot;, &quot;Apple SD Gothic NEO&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; margin-bottom: 7.5pt; -ms-word-break: keep-all;"><b><span lang="EN-US" style="font-size: 15px;">[Requirement</span></b><b><span style="font-size: 12pt;"><span lang="EN-US" style="font-size: 15px;">]</span></span></b></h3><hr><h3><span style="font-size: 15px;">City Data</span></h3><h3><span style="font-size: 15px;">1. The size is H * W. H is the height while W is the width (1≤H and W≤500).&nbsp;</span></h3><h3><span style="font-size: 15px;">2. The city is organized of 1*1 sized grids.&nbsp;</span></h3><h3><span style="font-size: 15px;">&nbsp; &nbsp;Each grid contains a street or a park.</span></h3><h3><span style="font-size: 15px;">3. The origin position is always (0, 0) while the destination position is always (H-1, W-1).</span></h3><h3><span style="font-size: 15px;">4. The street is marked ‘.’ while the park is marked ‘X’.&nbsp;</span></h3><h3><span style="font-size: 15px;">The origin position and the destination position are always street.</span></h3><h3><span style="font-size: 15px;"><br></span></h3><h3><span style="font-size: 15px;">Constraint of Movement</span></h3><h3><span style="font-size: 15px;">1. Only the movement to the adjacent grid to the right, left, top, bottom is allowed, and an hour is needed to pass through a grid.</span></h3><h3><span style="font-size: 15px;">2. A passage through a park is not allowed. Only the streets can be passed through.</span></h3><h3><span style="font-size: 15px;">3. Moving out of the given map is not allowed.</span></h3><h3><span style="font-size: 15px;"><br></span></h3><h3><span style="font-size: 15px;">Examples of Input</span></h3><h3><span style="font-size: 15px;"><br></span></h3><h3><span style="font-size: 15px;">The following map shows the map of H=3 and W=3 in input 1.</span></h3><h3><span style="font-size: 15px;">The shortest path from the origin (0,0) to the destination (2,2) while meeting the constraint takes 4 hours.</span></h3><h3><span style="font-size: 15px;">The following diagram show one of the shortest paths that take 4 hours to reach the destination.</span></h3><p><span lang="EN-US"><span lang="EN-US" style="font-size: 15px;"> </span></span></p><p><img style="width: 253px;" src="data:image/jpeg;base64,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" data-filename="빠른배송1.jpg"><br></p><p><span style="font-size: 16px;"><br></span></p><p>The following map shows the map of H=5 and W=4 in input 2.</p><p>Although the shortest path from the origin (0,0) to the destination (4,3) takes 7 hours as shown in the figure in the middle, it is not the answer since it fails to meet the constraint of not passing through the park.</p><p>&nbsp;&nbsp;</p><p>Therefore, the shortest path from the origin to the destination while meeting the constraint takes 9 hours.</p><div><br></div><p><img style="width: 494px;" src="data:image/jpeg;base64,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" data-filename="빠른배송2.jpg"><span style="font-size: 16px;"><br></span></p><p><span style="font-size: 16px;"><br></span></p><p align="left" class="MsoNormal"><b style="font-size: 17px;"><span lang="EN-US" style="font-size: 15px;">[Input Format</span></b><b style="font-size: 17px;"><span style="font-size: 12pt;"><span lang="EN-US" style="font-size: 15px;">]</span></span></b></p><hr><p align="left" class="MsoNormal">In the first line, two integers H and W are input with a space as the separator.</p><p align="left" class="MsoNormal">H is the height while W is the width.</p><p align="left" class="MsoNormal">Beginning with the second line, a string of W characters are input in H lines.</p><p align="left" class="MsoNormal">The character string represents the grid data.</p><p><span lang="EN-US" style="font-size: 15px;"> </span></p><h3 style="line-height: normal; margin-bottom: 7.5pt; -ms-word-break: keep-all;"><p align="left" class="MsoNormal" style="-ms-word-break: keep-all;"><br></p></h3><p align="left" class="MsoNormal" style="-ms-word-break: keep-all;"><b style="font-size: 17px;"><span lang="EN-US" style="font-size: 15px;">[Output Format</span></b><b style="font-size: 17px;"><span style="font-size: 12pt;"><span lang="EN-US" style="font-size: 15px;">]</span></span></b></p><hr><p align="left" class="MsoNormal">Print the shortest path from the origin (0,0) to the destination (H-1,W-1).</p><p align="left" class="MsoNormal">Output -1 if the destination cannot be reached.</p><div><br></div><p><br></p><br><label class="input_output_example_title" style="margin-top: 15px;">Input / Output Examples</label><div class="input_output_special_char_guide"><div><span class="divonx">&divonx;</span>  <span>Please keep the input/output format well.</span> </div><span><div class="blank">&blank;</div> : Blank</span><span><div class="crarr">&crarr;</div> : line break</span></div><div class="input_output_example_number">Input Example 1<button class="btn btn-default copy_input_button clipboard_copy pull-right" data-domain="data-clipboard-text" type="button" data-clipboard-text="3 3
+...
+...
+...
+" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="복사하기" data-container="body" tooltip="copy_input"><i class="gi gi-copy"></i></button></div><div class="input_output_example_wrap"><div class="input_output_example_background">3<span class="spc"><span class="spc-sp">&nbsp;</span><span class="spc-dmy">&blank;</span></span>3<span class="crarr">&crarr;</span><br>...<span class="crarr">&crarr;</span><br>...<span class="crarr">&crarr;</span><br>...<span class="crarr">&crarr;</span><br><div class="input_output_example">3&nbsp;3<br>...<br>...<br>...<br></div></div></div><div class="input_output_example_number">Output 1</div><div class="input_output_example_wrap"><div class="input_output_example_background">4<div class="input_output_example">4</div></div></div><br><div class="input_output_example_number">Input Example 2<button class="btn btn-default copy_input_button clipboard_copy pull-right" data-domain="data-clipboard-text" type="button" data-clipboard-text="5 4
+..X.
+X...
+..XX
+.X..
+....
+" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="복사하기" data-container="body" tooltip="copy_input"><i class="gi gi-copy"></i></button></div><div class="input_output_example_wrap"><div class="input_output_example_background">5<span class="spc"><span class="spc-sp">&nbsp;</span><span class="spc-dmy">&blank;</span></span>4<span class="crarr">&crarr;</span><br>..X.<span class="crarr">&crarr;</span><br>X...<span class="crarr">&crarr;</span><br>..XX<span class="crarr">&crarr;</span><br>.X..<span class="crarr">&crarr;</span><br>....<span class="crarr">&crarr;</span><br><div class="input_output_example">5&nbsp;4<br>..X.<br>X...<br>..XX<br>.X..<br>....<br></div></div></div><div class="input_output_example_number">Output 2</div><div class="input_output_example_wrap"><div class="input_output_example_background">9<div class="input_output_example">9</div></div></div><br><div class="input_output_example_number">Input Example 3<button class="btn btn-default copy_input_button clipboard_copy pull-right" data-domain="data-clipboard-text" type="button" data-clipboard-text="8 10
+..........
+XXXXX.....
+....X.....
+....X.....
+....XXXX..
+.......X..
+.......XXX
+..........
+" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="복사하기" data-container="body" tooltip="copy_input"><i class="gi gi-copy"></i></button></div><div class="input_output_example_wrap"><div class="input_output_example_background">8<span class="spc"><span class="spc-sp">&nbsp;</span><span class="spc-dmy">&blank;</span></span>10<span class="crarr">&crarr;</span><br>..........<span class="crarr">&crarr;</span><br>XXXXX.....<span class="crarr">&crarr;</span><br>....X.....<span class="crarr">&crarr;</span><br>....X.....<span class="crarr">&crarr;</span><br>....XXXX..<span class="crarr">&crarr;</span><br>.......X..<span class="crarr">&crarr;</span><br>.......XXX<span class="crarr">&crarr;</span><br>..........<span class="crarr">&crarr;</span><br><div class="input_output_example">8&nbsp;10<br>..........<br>XXXXX.....<br>....X.....<br>....X.....<br>....XXXX..<br>.......X..<br>.......XXX<br>..........<br></div></div></div><div class="input_output_example_number">Output 3</div><div class="input_output_example_wrap"><div class="input_output_example_background">-1<div class="input_output_example">-1</div></div></div><br><div class="input_output_example_number">Input Example 4<button class="btn btn-default copy_input_button clipboard_copy pull-right" data-domain="data-clipboard-text" type="button" data-clipboard-text="20 30
+.......X....XXXX.XX..XX.X.XX..
+X.XX....X.XX..X.X.X....XXXX..X
+..X.X..XX..X.....XX.X..X.XX...
+....X.X.X.XXX.X..X..X.X..XX.X.
+..XXX.XX...X.X....X.X..X..X...
+..X...........X.X...X...XX...X
+.X.X....X..XX..XX........X....
+..X....X........X......X......
+....XXX.X...XX.X.....X.X..X.X.
+.....XXX..X....X.X.......X..X.
+.....XX..X.X..X....X...XXX....
+..X...X.X....X....X..X..X.....
+XXXXXXXX.X.XX..XX..XX.......X.
+.....X..............XX.XXX.X.X
+..X.....X..X..XX.XX..X.X...XX.
+...X..X.XXX.XX......X...X..XXX
+.X.XX.X.........X.X...X...X..X
+..X...X..X..XX..XXX..X.XX...X.
+X....X.X....X...X.X..XX.XX..X.
+...X.X..X........X.X..........
+" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="복사하기" data-container="body" tooltip="copy_input"><i class="gi gi-copy"></i></button></div><div class="input_output_example_wrap"><div class="input_output_example_background">20<span class="spc"><span class="spc-sp">&nbsp;</span><span class="spc-dmy">&blank;</span></span>30<span class="crarr">&crarr;</span><br>.......X....XXXX.XX..XX.X.XX..<span class="crarr">&crarr;</span><br>X.XX....X.XX..X.X.X....XXXX..X<span class="crarr">&crarr;</span><br>..X.X..XX..X.....XX.X..X.XX...<span class="crarr">&crarr;</span><br>....X.X.X.XXX.X..X..X.X..XX.X.<span class="crarr">&crarr;</span><br>..XXX.XX...X.X....X.X..X..X...<span class="crarr">&crarr;</span><br>..X...........X.X...X...XX...X<span class="crarr">&crarr;</span><br>.X.X....X..XX..XX........X....<span class="crarr">&crarr;</span><br>..X....X........X......X......<span class="crarr">&crarr;</span><br>....XXX.X...XX.X.....X.X..X.X.<span class="crarr">&crarr;</span><br>.....XXX..X....X.X.......X..X.<span class="crarr">&crarr;</span><br>.....XX..X.X..X....X...XXX....<span class="crarr">&crarr;</span><br>..X...X.X....X....X..X..X.....<span class="crarr">&crarr;</span><br>XXXXXXXX.X.XX..XX..XX.......X.<span class="crarr">&crarr;</span><br>.....X..............XX.XXX.X.X<span class="crarr">&crarr;</span><br>..X.....X..X..XX.XX..X.X...XX.<span class="crarr">&crarr;</span><br>...X..X.XXX.XX......X...X..XXX<span class="crarr">&crarr;</span><br>.X.XX.X.........X.X...X...X..X<span class="crarr">&crarr;</span><br>..X...X..X..XX..XXX..X.XX...X.<span class="crarr">&crarr;</span><br>X....X.X....X...X.X..XX.XX..X.<span class="crarr">&crarr;</span><br>...X.X..X........X.X..........<span class="crarr">&crarr;</span><br><div class="input_output_example">20&nbsp;30<br>.......X....XXXX.XX..XX.X.XX..<br>X.XX....X.XX..X.X.X....XXXX..X<br>..X.X..XX..X.....XX.X..X.XX...<br>....X.X.X.XXX.X..X..X.X..XX.X.<br>..XXX.XX...X.X....X.X..X..X...<br>..X...........X.X...X...XX...X<br>.X.X....X..XX..XX........X....<br>..X....X........X......X......<br>....XXX.X...XX.X.....X.X..X.X.<br>.....XXX..X....X.X.......X..X.<br>.....XX..X.X..X....X...XXX....<br>..X...X.X....X....X..X..X.....<br>XXXXXXXX.X.XX..XX..XX.......X.<br>.....X..............XX.XXX.X.X<br>..X.....X..X..XX.XX..X.X...XX.<br>...X..X.XXX.XX......X...X..XXX<br>.X.XX.X.........X.X...X...X..X<br>..X...X..X..XX..XXX..X.XX...X.<br>X....X.X....X...X.X..XX.XX..X.<br>...X.X..X........X.X..........<br></div></div></div><div class="input_output_example_number">Output 4</div><div class="input_output_example_wrap"><div class="input_output_example_background">52<div class="input_output_example">52</div></div></div><br>
+					</div>
+				</div>
+			</div>
+  	    
+			<div class="col-md-8 lecture-running">
+				<div class="running_content">
+					<div class="editor_loading">
+						<h2>&lt;/&gt;</h2>
+						<h2>
+							Code Editor
+						</h2>
+					</div>
+					<div class="running_content_header">
+						
+							<div class="btn-group" id = "lang_select_menu">
+								<a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Language Option : <span class="selected_lang"></span> <span class="caret"></span></a>
+								<ul class="dropdown-menu" id="myTabs" role="menu">
+								</ul>
+							</div>
+							
+						<div class="btn-group pull-right coding_tools">
+						</div>
+					</div>
+					<div class="goorm-quiz-tab"><goorm-tabs tab_save="true" tab_run="true" bt_submit="true" arduino="false" style="font-size: 13px;"><goorm-editor class="goorm-editor goorm-code" quiz_index="q_famcX_1495519859945" style="height: 300px;" goorm-tab="C" form="programming" lang="text/x-csrc" filetype="c" theme="monokai" exam="/q_famcX_1495519859945">#include &lt;stdio.h&gt;
+int H;//Height
+int W;//Width
+char map[500][510];//Map
+
+void input_data(void){
+	int i;
+	scanf("%d %d", &H, &W);
+	for(i=0 ; i&lt;H ; i++){
+		scanf("%s", map[i]);
+	}
+}
+
+int main(void){
+	int ans = 0;
+	input_data();
+
+	// Todo : write the code
+	
+
+	printf("%d\n", ans);
+	return 0;
+}
+</goorm-editor><goorm-editor class="goorm-editor goorm-code" quiz_index="q_famcX_1495519859945" style="height: 300px;" goorm-tab="C++" form="programming" lang="text/x-c++src" filetype="cpp" theme="monokai" exam="/q_famcX_1495519859945">#include &lt;iostream&gt;
+using namespace std;
+int H;//Height
+int W;//Width
+char map[500][510];//map
+
+void input_data(){
+	int i;
+	cin &gt;&gt; H &gt;&gt; W;
+	for(i=0 ; i&lt;H ; i++){
+		cin &gt;&gt; map[i];
+	}
+}
+
+int main(){
+	int ans = 0;
+	input_data();
+	// Todo : write the code
+	
+	cout &lt;&lt; ans &lt;&lt; endl;
+	return 0;
+}</goorm-editor><goorm-editor class="goorm-editor goorm-code" quiz_index="q_famcX_1495519859945" style="height: 300px;" goorm-tab="Java" form="programming" lang="text/x-java" filetype="java" theme="monokai" exam="/q_famcX_1495519859945">import java.util.Scanner;
+
+public class Main {
+	int H;//Height
+	int W;//Width
+	char map[][] = new char[500][500];//map
+	
+	
+
+	public void input_data()  {
+		Scanner sc = new Scanner(System.in);
+		H = sc.nextInt();  
+		W = sc.nextInt();  
+ 
+		for (int i = 0; i &lt; H; i++) {
+			map[i] = sc.next().toCharArray();
+		}
+	}
+
+	public static void main(String[] args){
+		Main m = new Main();
+		m.input_data();
+		int  ans=0;
+
+		// Todo : write the code
+		
+		System.out.println(ans);
+	}
+}</goorm-editor></goorm-tabs></div>
+				</div>
+
+				<div class="result_content">
+					<div role="tab">
+						<h4 class="panel-title">
+							<div class="result_tab_open_btn">
+								<div class="running_result_header" style="display:inline-block;">
+									<ul id="myTermTabs" class="list-inline" role="tablist">
+										<li role="presentation" class="active">
+											<a href="#goorm-stdout-wrapper" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">
+												<i class="fa fa-terminal"></i>
+												<span class="term-title">
+													&nbsp;&nbsp;Results
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+											
+								<span class="web_container"></span>
+											
+								<i data-toggle="collapse" href="#result_tab" class="fa fa-chevron-down btn pull-right" aria-hidden="true"></i>
+								
+							</div>
+						</h4>
+					</div>
+					<div id="result_tab" class="in">
+						
+						<div class="tab-content"> 
+							<div role="tabpanel" class="tab-pane in active goorm-stdout-wrapper" id="goorm-stdout-wrapper">
+								<div class="goorm-stdout-container terminal_style">
+									
+								</div>
+							</div> 
+							<div role="tabpanel" class="tab-pane marking_result" id="marking-result">
+							</div>
+							<div role="tabpanel" class="tab-pane marking_result" id="run-result">
+							</div> 
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<div class="modal fade" id="dlg_run_turtle" tabindex="-1" role="dialog" data-backdrop="false" aria-hidden="true">
+		<div class="modal-dialog" style="width: 730px;" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Results
+					</h4>
+				</div>
+				<div class="modal-body padding-10px">
+					<div id="turtle_modal">
+
+					</div>
+					<pre id="turtle_modal_output">>> </pre>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="dlg_run_robocode" tabindex="-1" role="dialog" data-backdrop="false" aria-hidden="true">
+		<div class="modal-dialog" style="width: 730px;" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">robocode</h4>
+				</div>
+				<div class="modal-body padding-10px">
+					<div id="arena_container">
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	<div class="modal fade" id="dlg_run_gui" tabindex="-1" role="dialog" data-backdrop="false" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" style="float: left;">Results
+					</h4>
+				</div>
+				<div class="modal-body padding-10px">
+					<div id="gui_modal_body">
+
+					</div>
+				</div>
+				<!-- <div class="modal-footer">
+					<pre id="gui_modal_output">>> </pre>
+				</div> -->
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="dlg_confirm" tabindex="-1" role="dialog">
+		<div class="modal-dialog" style="width: 500px;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<h1><i class="fa fa-trophy"></i>The test is over.</h1><br>
+					Are you sure to go to main page?
+				</div>
+				<div class="modal-footer">
+					<button type="button" id="g_confirm_cancel" class="btn btn-sm btn-default" data-dismiss="modal">
+						Stay this page.
+					</button>
+					<button type="button" id="g_confirm_ok" class="btn btn-sm btn-primary">
+						It moves.
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="dlg_setting">
+		<div class="modal-dialog" style="width: 550px;">
+			<div class="modal-content learnSettingModal">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title">View setting</h4>
+				</div>
+				<div class="modal-body learnSetting_wrap">
+					<div class="col-xs-6">
+						<h5>Contents Area</h5>
+						<div class="learnSettings">
+							<div class="lecture_setting_item">
+								<label class="setting_item_label" for="">Line Spacing</label>
+								<select class="form-control input-sm noshadow content_line_height">
+									<option value="90%">90%</option>
+									<option value="100%">100%</option>
+									<option value="110%">110%</option>
+									<option value="120%">120%</option>
+									<option value="130%">130%</option>
+									<option value="140%">140%</option>
+									<option value="150%">150%</option>
+									<option value="160%" selected>160%</option>
+									<option value="170%">170%</option>
+								</select>
+							</div>
+							<div class="lecture_setting_item lastitem">
+								<label class="setting_item_label" for="">Font Size</label>
+								<select class="form-control input-sm noshadow content_font_size">
+									<option value="9px">9</option>
+									<option value="10px">10</option>
+									<option value="11px">11</option>
+									<option value="12px" selected>12</option>
+									<option value="13px">13</option>
+									<option value="14px">14</option>
+									<option value="15px">15</option>
+									<option value="16px">16</option>
+									<option value="17px">17</option>
+								</select>
+							</div>
+						</div>
+
+						<h5 class="gui_option">Running Area</h5>
+						<div class="learnSettings gui_option">
+							<div class="lecture_setting_item lastitem">
+								<label class="setting_item_label">Screen Size</label>
+								<select class="form-control input-sm noshadow gui_screen_size">
+									<option value="480x320">480x320</option>
+									<option value="512x512">512x512</option>
+									<option value="800x600" selected>800x600</option>
+									<option value="1024x768">1024x768</option>
+									<option value="1280x800">1280x800</option>
+									<option value="1280x1024">1280x1024</option>
+									<option value="1366x768">1366x768</option>
+									<option value="1920x1080">1920x1080</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-6">
+						<h5>Editor Area</h5>
+						<div class="learnSettings">
+							<div class="lecture_setting_item">
+								<label class="setting_item_label" for="">Line Spacing</label>
+								<select class="form-control input-sm noshadow editor_line_height">
+									<option value="90%">90%</option>
+									<option value="100%">100%</option>
+									<option value="110%">110%</option>
+									<option value="120%">120%</option>
+									<option value="130%" selected>130%</option>
+									<option value="140%">140%</option>
+									<option value="150%">150%</option>
+									<option value="160%">160%</option>
+									<option value="170%">170%</option>
+								</select>
+							</div>
+							<div class="lecture_setting_item">
+								<label class="setting_item_label" for="">Font Size</label>
+								<select class="form-control input-sm noshadow editor_font_size">
+									<option value="9px">9</option>
+									<option value="10px">10</option>
+									<option value="11px">11</option>
+									<option value="12px">12</option>
+									<option value="13px"> 13</option>
+									<option value="14px" selected>14</option>
+									<option value="15px">15</option>
+									<option value="16px">16</option>
+									<option value="17px">17</option>
+								</select>
+							</div>
+							<div class="lecture_setting_item lastitem">
+								<label class="setting_item_label" for="">Theme</label>
+								<select class="form-control input-sm noshadow editor_theme">
+									<option value="default">White</option>
+									<option value="monokai" selected>Black</option>
+								</select>
+							</div>
+							<div class="lecture_setting_item lastitem">
+ 								<label class="setting_item_label" for="">Key Map</label>
+ 								<select class="form-control input-sm noshadow editor_keymap">
+ 									<option value="default" selected>Default</option>
+ 									<option value="sublime">Sublime Text</option>
+ 									<option value="emacs">Emacs</option>
+ 									<option value="vim">Vim</option>
+ 								</select>
+ 							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="modal-footer text-center">
+					<button type="button" id="set_view_option_confirm_ok" class="btn btn-sm btn-primary">Confirm</button>
+					<button type="button" id="set_view_option_confirm_cancel" class="btn btn-sm btn-default" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="dlg_arduino_extension">
+		<div class="modal-dialog" style="width: 800px;">
+			<div class="modal-content learnSettingModal">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title">goormduino Chrome App</h4>
+				</div>
+				<div class="modal-body learnSetting_wrap">
+					<div class="board_run_step quiz_solution_edit">
+						<div class="lecture_setting_item lastitem">
+							<label class="setting_item_label_title toggle cursor-pointer" for="">
+								1. Install goormduino Chrome App
+							</label>
+
+							<div class="quiz_solution_body">
+								<!-- Aruduino Guide -->
+								<div class="lecture_setting_item lastitem">
+									<p>
+										In order to connect and run Arduino, you need to install &#34;goormduino&#34;.
+									</p>
+									<p>
+										Plaese install via &#34;Install&#34; button in the bottom right corner.
+									</p>
+									<p>
+										(Currently only supports Chrome brower, but Firefox or Edge will be supported later.)
+									</p>
+									<div class="alert alert-info setup_guide" role="alert" style="display: none;">Already installed in the browser.</div>
+									<div style="text-align: right">
+										<button class="setup_chrome_extension btn btn-default btn-sm" type="button">Install</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="board_run_step quiz_solution_edit">
+						<div class="lecture_setting_item lastitem">
+							<label class="setting_item_label_title toggle cursor-pointer" for="">
+								2. Connect goormduino
+							</label>
+
+							<div class="quiz_solution_body">
+								<!-- Aruduino Guide -->
+								<div class="lecture_setting_item">
+									<p>
+										If you installed &#34;goormduino&#34;, you have to connect to goormduino.
+									</p>
+									<p>
+										Connect to goormduino by clicking &#34;Connect&#34; button which in the lower-right corner.
+									</p>
+									<p>
+										If connected, connect the arduino board to PC, click <i class="fa fa-refresh" style="padding: 3px;"></i> right to "Load the board List Connected with computer" to load arduino board list.
+									</p>
+									<p>
+										If connected by USB, You can check the board start with &#34;tty.usb&#34; in the list, so select the board.
+									</p>
+									<div style="text-align: right">
+										<button class="connect_chrome_extension btn btn-default btn-sm" type="button">
+											<span class="run_loading loading-sm" style="display: none;"></span>
+											<span class="run_loaded" style="display: none;">
+												<i class="fa fa-check"></i>
+											</span>
+											Connect
+										</button>
+									</div>
+								</div>
+								<div class="lecture_setting_item lastitem">
+									<label class="setting_item_label" for="">
+										Load the board List connected with computer
+										<i class="reload_arduino fa fa-refresh" style="font-size: 12px;cursor:pointer;"></i>
+									</label>
+									<select class="arduino_device form-control input-sm">
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="modal-footer text-center">
+					<button type="button" id="arduino_extension_confirm_ok" class="btn btn-sm btn-primary">OK</button>
+				</div> -->
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="dlg_confirmation" tabindex="-1" role="dialog" aria-labelledby="modal_confirmation" aria-hidden="true">
+		<div class="modal-dialog" style="width: 400px;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="confirmation_title">Confirmation</h4>
+				</div>
+				<div id="confirmation_content_container" class="modal-body padding-10px"></div>
+				<div class="modal-footer">
+					<button type="button" id="g_cfrm_btn_yes" class="btn btn-primary">Yes</button>
+					<button type="button" id="g_cfrm_btn_no" class="btn btn-default">No</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="terminal_dummy" class="code_font" style="position:absolute;z-index:-1;visibility:hidden">
+		1
+		<span id="dummy_terminal"></span>
+	</div>
+		
+	<div id="loader" class="modal">
+		<div tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
+			<div class="modal-dialog" style="text-align: center; position: absolute; top: 50%; left: 50%; margin-left: -300px; margin-top: -140px;">
+				<h5 class="header">Loading.</h5>
+				<p class="contents">Loading quiz...<br>Please wait</p>
+				<div class="fullscreen_loader"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="dlg_testcase_setting" tabindex="-1" role="dialog" aria-labelledby="modal_confirmation" aria-hidden="true">
+		<div class="modal-dialog" style="width: 50%;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="confirmation_title">Testcase Run</h4>
+				</div>
+				<div id="testcase_container" class="modal-body padding-10px">
+					<div class="well well-sm testcase_input_guide">
+						The value of each input case is passed to the standard input in the same way as the actual scoring.
+						
+Even if there is no error during normal execution, if an error occurs in the Testcase Run, the same error occurs when scoring. Please correct the code and try again.
+
+					</div>
+					<div id="testcase_list">
+					</div>
+					<div style="height: 40px;">
+						<button id="add_testcase" type="button" class="btn btn-default btn-xs pull-right" style="width: 37px; height: 34px;">
+							<i class="fa fa-plus"></i>
+						</button>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" id="run_programming_quiz_testcase" class="btn btn-primary btn-success">
+						<span>Run</span>
+						<div id="quiz_testcase_run_loading" style="cursor:not-allowed; display:none;">
+							<div class="run_loading"></div>
+						</div>
+					</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<input type="hidden" name='dashboard_lecture_index_input' value='lec_PepCC_1490684381403' />
+	<input type="hidden" name='dashboard_exam_index_input' value='ex_ybDaL_1495497584870' />
+	<input type="hidden" name='dashboard_quiz_index_input' value='q_famcX_1495519859945' />
+	<input type="hidden" name='dashboard_quiz_type_input' value='programming' />
+	<input type="hidden" name='dashboard_quiz_setting_input' value='exam_mode' />
+	<input type="hidden" name='dashboard_lecture_open_lesson' value='private' />
+	<input type="hidden" name='dashboard_quiz_form' value='programming' />
+	<input type="hidden" name='dashboard_quiz_show_run_res_usage' value='false' />
+	<input type="hidden" name='dashboard_quiz_run_time_limit' value='60' />
+  <input type="hidden" name='dashboard_lecture_is_sample' value='true' />
+  <input type="hidden" name='dashboard_backup_server_url' value='backupserver-qa.goorm.io' />
+
+	
+	
+	
+
+	<script src="/libs/jquery/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="/libs/jquery/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/libs/jquery/jquery.throttle.debounce.js"></script>
+	<script src="/libs/bootstrap/js/bootstrap-edu.min.js"></script>
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+
+	<!-- <script type="text/javascript" src="/libs/Hangul/Hangul.min.js"></script>
+    <script type="text/javascript" src="/libs/tty/term.js"></script> -->
+	<script type="text/javascript" src="/libs/js.ot.code/ot.js"></script>
+	<script type="text/javascript" src="/libs/xterm/xterm.js"></script>
+	<script type="text/javascript" src="/libs/skulpt/skulpt.min.js"></script>
+	<script type="text/javascript" src="/libs/skulpt/skulpt-stdlib.js"></script>
+	<script type="text/javascript" src="/libs/Toastr/toastr.min.js"></script>
+	<script src="/libs/bootstrap-treeview/bootstrap-treeview.min.js"></script>
+	<script src="/libs/bootstrap-tour/bootstrap-tour.min.js"></script>
+
+	<script src="/libs/swfobject/swfobject.js"></script>
+
+	<script type="text/javascript" src="/modules/goorm-toast.js"></script>
+	<script type="text/javascript" src="/modules/goorm-arrow.js"></script>
+	<script type="text/javascript" src="/modules/widgets/loader.js"></script>
+    <script type="text/javascript" src="/modules/goorm-tutorial-lint.js"></script>
+	<script type="text/javascript" src="/modules/editor.complete.js"></script>
+    <script type="text/javascript" src="/modules/tutorial.editor.js"></script>
+    <!-- <script type="text/javascript" src="/modules/goorm-tree.js"></script> -->
+    <!-- <script type="text/javascript" src="/modules/goorm-tutorial-menu.js"></script> -->
+    <script type="text/javascript" src="/modules/goorm-tutorial-terminal.js"></script>
+	<script type="text/javascript" src="/modules/goorm-tutorial.index.js"></script>
+	<!-- <script type="text/javascript" src="/robocode/battle.js"></script> -->
+	<!-- <script type="text/javascript" src="/modules/widgets/confirmation.js"></script> -->
+	<script src="/libs/require.js"></script>
+	<!-- <script type="text/javascript" src="/modules/tutorial.exam.menu.js"></script> -->
+	<script type="text/javascript" src="/modules/tour/goorm.tour.js"></script>
+		
+	
+
+	<script type="text/javascript" src="/modules/widgets/log.js"></script>
+	<script type="text/javascript" src="/modules/log-connect.js"></script>
+		
+	<script type="text/javascript">
+ 		var user_id = 'anonymous_r57bublzb';
+ 		var user_name = '';
+ 		var team_index = '';
+ 		var collaboration_option = 'personal';
+		var is_end_exam = false;
+		var is_end_deadline = false;
+		var is_submitted = 'false';
+		var is_student = false;
+		var use_pdf = 'false';
+		var is_collaboration = true;
+		var is_teacher = false;
+		var room_id = '';
+		if (is_teacher) {
+			is_collaboration = false;
+		}
+		if (is_student) {
+			user_id = 'anonymous_r57bublzb';
+			user_name = '';
+		} else {
+			is_collaboration = false;
+		}
+		var scratchduino_lang = {
+			'scratchduino_blocks': 'Scratch Block',
+			'scratchduino_source_c': 'Arduino Source Code (C language)',
+			'scratchduino_serial': 'Serial',
+			'scratchduino_no_ie_edge': 'Scratchduino quiz is not supported in Internet Explorer or Edge Browser'
+		};
+
+		var no_flash_lang = 'Adobe Flash Player is not installed or deactivated.';
+		
+		var preset_testcase = ["3 3\n...\n...\n...\n","5 4\n..X.\nX...\n..XX\n.X..\n....\n","8 10\n..........\nXXXXX.....\n....X.....\n....X.....\n....XXXX..\n.......X..\n.......XXX\n..........\n","20 30\n.......X....XXXX.XX..XX.X.XX..\nX.XX....X.XX..X.X.X....XXXX..X\n..X.X..XX..X.....XX.X..X.XX...\n....X.X.X.XXX.X..X..X.X..XX.X.\n..XXX.XX...X.X....X.X..X..X...\n..X...........X.X...X...XX...X\n.X.X....X..XX..XX........X....\n..X....X........X......X......\n....XXX.X...XX.X.....X.X..X.X.\n.....XXX..X....X.X.......X..X.\n.....XX..X.X..X....X...XXX....\n..X...X.X....X....X..X..X.....\nXXXXXXXX.X.XX..XX..XX.......X.\n.....X..............XX.XXX.X.X\n..X.....X..X..XX.XX..X.X...XX.\n...X..X.XXX.XX......X...X..XXX\n.X.XX.X.........X.X...X...X..X\n..X...X..X..XX..XXX..X.XX...X.\nX....X.X....X...X.X..XX.XX..X.\n...X.X..X........X.X..........\n"];
+		
+		var quiz_form = 'programming';
+		
+		for (var i = 0; i < preset_testcase.length ; i++) {
+			$('#testcase_list').append([
+				'<div class="input-group testcase_textarea_group">',
+					'<textarea class="form-control testcase_textarea" style="resize: none;"></textarea>',
+					'<span class="input-group-btn">',
+						'<button type="button" class="btn btn-default remove_testcase">',
+							'<i class="fa fa-minus"></i>',
+						'</button>',
+					'</span>',
+				'</div>'
+			].join(''));
+			
+			$('#testcase_list').find('textarea').last().val(preset_testcase[i]);
+		}
+		
+		require(['/modules/loader/teach_loader.js'], function() {
+			require(['main.localization', 'widgets/confirmation', 'widgets/loader', 'widgets/codemirror', 'codemirror/addon/lint/lint'], function(localization, confirmation, loader, codemirror) {
+				localization.init(function() {
+					require(['tutorial.exam.menu', 'goorm-mathjax'], function(menu, mathjax) {
+						
+						window.confirmation = new confirmation;
+						window.loader = new loader();
+						window.menu = menu;
+
+						$(document).ready(function () {
+							log_connect.load();
+							toast = new widgets.toast().init();
+							arrow = new widgets.arrow().init();
+
+							// pdf
+							if (use_pdf === 'true') {
+								var quiz_index = $("[name=dashboard_quiz_index_input]").val();
+								
+								$('#quiz_pdf').attr('src', '/libs/pdf.js/web/viewer.html?file=/quiz/'+quiz_index+'/'+quiz_index+'.pdf');
+								$('.instruction_content .pdf_contents').show();
+							}
+
+							// contents
+							tutorial_editor.lazy_load = true;
+							tutorial_editor.load();
+							tutorial_editor.session.user_id = 'anonymous_r57bublzb';
+							tutorial_editor.session.email = '';
+							tutorial_editor.backup.email = false;
+							tutorial_editor.backup.object_storage = false;
+
+							if (g_tour && (quiz_form !== 'scratch' && quiz_form !== 'entry')) {
+								g_tour.init('programming.exam', localization);
+							}
+							
+							menu.init({
+								lecture_index: $('[name=dashboard_lecture_index_input]').val(),
+								exam_index: $('[name=dashboard_exam_index_input]').val(),
+								quiz_index: $('[name=dashboard_quiz_index_input]').val(),
+								tree_container: $('#curriculumtree'),
+								is_student: is_student,
+								is_teacher: is_teacher,
+								is_admin: false,
+								user_id: user_id
+							});
+
+							window.c_result = [];
+							window.cpp_result = [];
+							window.python_result = [];
+
+							CodeMirror.registerHelper("lint", "text/x-csrc", function() {
+								return window.c_result || [];
+							});
+
+							CodeMirror.registerHelper("lint", "text/x-c++src", function() {
+								return window.cpp_result || [];
+							});
+
+							CodeMirror.registerHelper("lint", "python", function() {
+								return window.python_result || [];
+							});
+
+							mathjax.render($('.instruction_content'));
+						});
+					});
+				});
+			});
+		});
+		
+		
+		
+	</script>
+	<script>
+	if (window.location.host && window.location.host.indexOf('.dev.') === -1) {
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-44863335-1', 'auto', 'goorm');
+	  ga('goorm.send', 'pageview');
+
+	  if (window.location.host === 'codingtest.goorm.io' || window.location.hostname === 'codingtest.goorm.io') {
+		ga('create', 'UA-44863335-13', 'auto');
+	  	ga('send', 'pageview');  
+	  }
+	  
+	}
+</script>
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1602541630050283'); // Insert your pixel ID here.
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1602541630050283&ev=PageView&noscript=1"
+/></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+
+</body>
+</html>
