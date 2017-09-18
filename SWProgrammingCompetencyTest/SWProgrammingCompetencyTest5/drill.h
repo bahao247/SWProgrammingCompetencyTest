@@ -1,0 +1,1 @@
+int drill(int x1, int r1, int x2, int r2);

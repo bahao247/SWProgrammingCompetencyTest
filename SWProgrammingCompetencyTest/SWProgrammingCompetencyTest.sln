@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SWProgrammingCompetencyTest
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SWProgrammingCompetencyTest4", "SWProgrammingCompetencyTest4\SWProgrammingCompetencyTest4.vcxproj", "{B0D6BEDD-7B21-42E9-AAB7-95AF211BBB46}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SWProgrammingCompetencyTest5", "SWProgrammingCompetencyTest5\SWProgrammingCompetencyTest5.vcxproj", "{A2DDC159-4772-4BA8-B74E-1F52F7B2E5DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -33,6 +35,10 @@ Global
 		{B0D6BEDD-7B21-42E9-AAB7-95AF211BBB46}.Debug|Win32.Build.0 = Debug|Win32
 		{B0D6BEDD-7B21-42E9-AAB7-95AF211BBB46}.Release|Win32.ActiveCfg = Release|Win32
 		{B0D6BEDD-7B21-42E9-AAB7-95AF211BBB46}.Release|Win32.Build.0 = Release|Win32
+		{A2DDC159-4772-4BA8-B74E-1F52F7B2E5DA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A2DDC159-4772-4BA8-B74E-1F52F7B2E5DA}.Debug|Win32.Build.0 = Debug|Win32
+		{A2DDC159-4772-4BA8-B74E-1F52F7B2E5DA}.Release|Win32.ActiveCfg = Release|Win32
+		{A2DDC159-4772-4BA8-B74E-1F52F7B2E5DA}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
