@@ -1,0 +1,3 @@
+﻿  Source.cpp
+d:\git\swprogrammingcompetencytest\swprogrammingcompetencytest\swprogrammingcompetencytest6\source.cpp(37): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+  SWProgrammingCompetencyTest6.vcxproj -> D:\Git\SWProgrammingCompetencyTest\SWProgrammingCompetencyTest\Debug\SWProgrammingCompetencyTest6.exe
